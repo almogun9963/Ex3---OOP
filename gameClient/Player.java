@@ -57,7 +57,7 @@ public class Player
 			this.destination = newFruit.getInt("dest");
 			this.speed = newFruit.getInt("value");
 			this.location = new Point3D(newFruit.getString("pos"));
-			this.picture = "player" + indexPicture +".png";
+			this.picture = "player" + indexPicture +".jpg";
 		}
 		catch (Exception e)
 		{

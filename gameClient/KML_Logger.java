@@ -74,7 +74,11 @@ public class KML_Logger
 			e.printStackTrace();
 		}
 	}
-	/*
+	/**
+	 * makes the first icon.
+	 * @param icon is the img that we want.
+	 * @param mark is the place.
+	 * @param temp is the number of the player.
 	 */
 	private void icon(Icon icon , Placemark mark , int temp)
 	{
@@ -88,10 +92,17 @@ public class KML_Logger
 		mark.createAndAddStyle().setIconStyle(style);
 		
 	}
+	/**
+	 * makes the second icon.
+	 * @param icon is the img that we want.
+	 * @param mark is the place.
+	 * @param temp is the number of the fruit.
+	 * @throws ParseException
+	 */
 	private void icon2(Icon icon , Placemark mark , int temp) throws ParseException
 	{
 		String t1 = makeString(toMillisec(whatIsTheTime()) + temp * 1000);
-		String t2 = makeString(toMillisec(whatIsTheTime()) + (temp+1) * 1000);
+		String t2 = makeString(toMillisec(whatIsTheTime()) + (temp + 1) * 1000);
 		String[] splitedT1 = t1.split(" ");
 		t1=cutTheArr(splitedT1);
 		String[] splitedT2 = t2.split(" ");
@@ -123,7 +134,7 @@ public class KML_Logger
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		return simpleDateFormat.format(new Date(n));
 	}
-	/**\
+	/**
 	 * cutting the arr to 2.
 	 * @param stringArr is the arr that we want to cut.
 	 * @return the string that represent the arr.

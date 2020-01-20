@@ -197,7 +197,7 @@ public class MyGameGUI extends Thread
 		StdDraw.clear(Color.WHITE);
 		StdDraw.setXscale(-100,100);
 		StdDraw.setYscale(-100,100);
-		StdDraw.picture(0 , 0 , "gameOver.png");
+		StdDraw.picture(0 , 0 , "gameover.jpg");
 		StdDraw.show();
 	}
 
@@ -211,7 +211,6 @@ public class MyGameGUI extends Thread
 		StdDraw.clear(Color.CYAN);
 		StdDraw.setYscale(-100 , 100);
 		StdDraw.setXscale(-100 , 100);
-		StdDraw.picture(0,0,"openingScreen.png");
 		int mode = -1;
 		while(mode == -1)
 		{
@@ -440,7 +439,7 @@ public class MyGameGUI extends Thread
 		yLocation = ((yRange.get_max() + yRange.get_min())/2);
 		xLocation = ((xRange.get_max() + xRange.get_min())/2);
 		StdDraw.clear();
-		StdDraw.picture(xLocation , yLocation,"backscreen.png");
+		StdDraw.picture(xLocation , yLocation,"backscreen.jpg");
 		rightScaleX = ((xRange.get_max() - xRange.get_min()) * 0.02);
 		StdDraw.setPenRadius(0.30);
 		StdDraw.setPenColor(Color.GREEN);

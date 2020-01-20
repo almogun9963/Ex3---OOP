@@ -147,7 +147,6 @@ public class Graph_GUI extends Thread
 		 StdDraw.clear(Color.CYAN);
 		 StdDraw.setYscale(-100 , 100);
 		 StdDraw.setXscale(-100 , 100);
-		 StdDraw.picture(0 ,0 ,"Maze.png");
 	 }
 	 /**
 	  * this function prints the graph

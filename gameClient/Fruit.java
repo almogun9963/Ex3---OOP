@@ -94,11 +94,11 @@ public class Fruit
 	{
 		if (type == -1) 
 		{
-			this.picture = "redStar.png";
+			this.picture = "apple.jpg";
 		}
 		else
 		{
-			this.picture = "yellowStar.png";
+			this.picture = "bannana.jpg";
 		}
 	}
 
