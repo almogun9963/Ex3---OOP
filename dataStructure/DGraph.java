@@ -240,7 +240,7 @@ public class DGraph implements graph, Serializable
 	{
 		return this.nodesHashMap;
 	}
-//init from a string
+	//init from a string
 	public void init(String data)
 	{
 		try

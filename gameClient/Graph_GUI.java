@@ -172,7 +172,7 @@ public class Graph_GUI extends Thread
 		 yLocation = ((yRange.get_max() + yRange.get_min())/2);
 		 xLocation = ((xRange.get_max() + xRange.get_min())/2);
 		 StdDraw.clear();
-		 StdDraw.picture(xLocation , yLocation,"backscreen.png");
+		 StdDraw.picture(xLocation , yLocation,"backscreen.jpg");
 		 rightScaleX = ((xRange.get_max() - xRange.get_min()) * 0.02);
 		 StdDraw.setPenRadius(0.30);
 		 StdDraw.setPenColor(Color.GREEN);

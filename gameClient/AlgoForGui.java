@@ -26,15 +26,10 @@ public class AlgoForGui extends  Thread
 		return;
 	}
 
-
-
-
-	public AlgoForGui(game_service theGame, List<Fruit> fruitList, List<Player> robotList) {
-		// TODO Auto-generated constructor stub
+	public AlgoForGui(game_service theGame, List<Fruit> fruitList, List<Player> robotList) 
+	{
+		this.myGameGui = (MyGameGUI) theGame;
 	}
-
-
-
 
 	/**
 	 * start the automatic game.

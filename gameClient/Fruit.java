@@ -103,7 +103,7 @@ public class Fruit
 	}
 
 	/**
-	 *	update a fruit.
+	 * update a fruit.
 	 * @param str the json string.
 	 */
 	public void update(String str)
@@ -161,10 +161,10 @@ public class Fruit
 	}
 
 	/**
-	 * chooses where the robot should move.
+	 * chooses where the player should move.
 	 * @param graph the graph we are working on.
 	 * @param fruit the fruit that we are checking.
-	 * @return the node id the robot should move to.
+	 * @return the node id the player should move to.
 	 */
 	public edge_data getFruitEdge(graph graph, Fruit fruit)
 	{
@@ -238,10 +238,4 @@ public class Fruit
 
 		return false;
 	}
-
-//	public edge_data edge(DGraph graph) 
-//	{
-//		
-//		return null;
-//	}
 }

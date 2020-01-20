@@ -127,7 +127,8 @@ public class SimpleGameClient
 		int s = ee.size();
 		int r = (int)(Math.random()*s);
 		int i=0;
-		while(i<r){
+		while(i<r)
+		{
 			itr.next();
 			i++;
 		}

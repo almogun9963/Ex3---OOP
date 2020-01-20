@@ -41,10 +41,10 @@ public class Player
 	}
 
 	/**
-	 * creat a robot from a json string.
-	 * @param json the json string that represent the robot.
-	 * @param indexPicture an index for the robot picture.
-	 * @return the robot that we created.
+	 * create a player from a json string.
+	 * @param json the json string that represent the player.
+	 * @param indexPicture an index for the player picture.
+	 * @return the player that we created.
 	 */
 	public Player(String json , int indexPicture)
 	{
@@ -55,9 +55,9 @@ public class Player
 			this.id = newFruit.getInt("id");
 			this.source = newFruit.getInt("src");
 			this.destination = newFruit.getInt("dest");
-			this.speed = newFruit.getInt("speed");
+			this.speed = newFruit.getInt("value");
 			this.location = new Point3D(newFruit.getString("pos"));
-			this.picture = "Robot" + indexPicture +".png";
+			this.picture = "player" + indexPicture +".png";
 		}
 		catch (Exception e)
 		{
@@ -136,8 +136,8 @@ public class Player
 	}
 
 	/**
-	 * creat arraylist of robots from list of jsons.
-	 * @param list is the list of jsons that represent the robots.
+	 * creat arraylist of players from list of jsons.
+	 * @param list is the list of jsons that represent the players.
 	 * @return the arraylist that we created
 	 */
 	public ArrayList<Player> initToList(List<String> list)

@@ -285,7 +285,7 @@ public class MyGameGUI extends Thread
 		int source = 0, destination = 0;
 		if (!(log == null))
 		{
-			long time = game.timeToEnd();      
+    
 			for (int i = 0; i < log.size(); i++)
 			{
 				String playerJson = log.get(i);

@@ -79,7 +79,7 @@ public class createObj
 
 
 	/**
-	 * The function create object of GameServer From at string of json
+	 * create object of GameServer From at string of json.
 	 * @return GameServer 
 	 * @param str - string type if json
 	 */
@@ -94,7 +94,7 @@ public class createObj
 		} 
 		catch ( JsonSyntaxException  e) 
 		{
-			throw new RuntimeException("not a GameServe");
+			throw new RuntimeException("not a GameServer");
 		}
 	}
 
