@@ -29,6 +29,13 @@ public class AlgoForGui extends  Thread
 
 
 
+	public AlgoForGui(game_service theGame, List<Fruit> fruitList, List<Player> robotList) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
 	/**
 	 * start the automatic game.
 	 * @param scenario the scenario the client picked.
@@ -96,7 +103,7 @@ public class AlgoForGui extends  Thread
 		{
 			this.myGameGui.updateFruits();
 			this.myGameGui.updatePlayers();
-			moveRobots(this.myGameGui.getGameServiceFirst(),this.myGameGui.getGgraph());
+			movePlayers(this.myGameGui.getGameServiceFirst(),this.myGameGui.getGgraph());
 			this.myGameGui.print();
 			StdDraw.setPenColor(Color.YELLOW);
 			StdDraw.text(myGameGui.getxRange().get_max(), myGameGui.getyRange().get_max() + 0.0015, "time remaining: " + myGameGui.getGameServiceFirst().timeToEnd() / 1000);
@@ -154,13 +161,12 @@ public class AlgoForGui extends  Thread
 	 * @param game the game that the client chose.
 	 * @param g the graph for the given game.
 	 */
-	public void moveRobots(game_service game,DGraph g)
+	public void movePlayers(game_service game,DGraph g)
 	{
 		int playerID , source , destination;
 		List<String> log = game.move();
 		if(log != null)
 		{
-//			long t = game.timeToEnd();
 			for (int i = 0; i <log.size() ; i++) 
 			{
 				String robot_json = log.get(i);
@@ -214,5 +220,11 @@ public class AlgoForGui extends  Thread
 		}
 		ans = itr.next().getDest();
 		return ans;
+	}
+
+
+	public void update(game_service theGame, List<Fruit> fruitList, List<Player> robotList) 
+	{
+		
 	}
 }
