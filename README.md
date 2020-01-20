@@ -6,5 +6,5 @@ in this game we have robots (between 1 and 5 robots) and fruits (apples and bann
 in every scenario, the porpose of each robot is to collect as many points as he can (every fruit has a diffrent score), in the given time (30 or 60 sec).
 we give the player to choose between playing manually(the player chooses everything) or playing automaticly(the algorithms chooses everyting).
 
-for more information pls visit https://github.com/almogun9963/Ex3---OOP/wiki
+for more information please visit https://github.com/almogun9963/Ex3---OOP/wiki
 
